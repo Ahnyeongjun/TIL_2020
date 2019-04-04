@@ -31,7 +31,7 @@ master 가지로 돌아오는 명령어
 병합하기 전에 어떻게 바뀌었는지 비교할수 있는 명령어
 ## git checkout -- <파일 이름>
 로컬의 변경 내용을 변경전 상태로 되돌려주는 명령어
-# 감사합니다
-참고한 사이트[https://rogerdudler.github.io/git-guide/index.ko.html]
+
+#참고한 사이트[https://rogerdudler.github.io/git-guide/index.ko.html]
 
  
