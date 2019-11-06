@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="welcome">어서오세요!\n꿀파밍에 처음 오신것을 환영합니다!</string>
+    <string name="checkcode">인증코드</string>
+    <string name="phone_number">전화번호</string>
+    <string name="name">이름</string>
+    <string name="check_password">비밀번호 확인</string>
+    <string name="password">비밀번호</string>
+    <string name="email">이메일</string>
+    <string name="CD_check_image_view6">TODO</string>
+    <string name="CD_Phone_number_image_view5">TODO</string>
+    <string name="CD_Name_image_view4">TODO</string>
+    <string name="CD_check_password_image_view3">TODO</string>
+    <string name="CD_password_image_view2">TODO</string>
+    <string name="CD_email_image_view1">TODO</string>
+    <string name="et_checkcode">6자리 인증코드</string>
+    <string name="et_phone_number">-를 제외하고 입력해주세요</string>
+    <string name="et_name">이름을 입력해주세요</string>
+    <string name="et_re_password">다시 입력해주세요</string>
+    <string name="et_password">비밀번호을 입력해주세요</string>
+    <string name="et_email">이메일을 입력해주세요</string>
+    <string name="bt_sendcode">코드전송</string>
+</resources>

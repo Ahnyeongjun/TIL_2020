@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/bt_sendcode"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/button_round_bar"
+        android:text="@string/bt_sendcode"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toRightOf="@+id/et_phone_number"
+        app:layout_constraintTop_toBottomOf="@+id/tv_phone_number" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_email"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:text="@string/et_email"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/image_view1"
+        app:layout_constraintTop_toBottomOf="@id/tv_email" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_password"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:text="@string/et_password"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/image_view1"
+        app:layout_constraintTop_toBottomOf="@id/tv_password" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_re_password"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:text="@string/et_re_password"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/image_view1"
+        app:layout_constraintTop_toBottomOf="@id/tv_re_password" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_name"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:text="@string/et_name"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/image_view1"
+        app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_phone_number"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:text="@string/et_phone_number"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/image_view1"
+        app:layout_constraintTop_toBottomOf="@id/tv_phone_number" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_checkcode"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:text="@string/et_checkcode"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/image_view1"
+        app:layout_constraintTop_toBottomOf="@id/tv_checkcode"/>
+
+ 
+    <ImageView
+        android:id="@+id/image_view1"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/polygon_7"
+        app:layout_constraintStart_toStartOf="@+id/welcome_text"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_text"
+        android:contentDescription="@string/CD_email_image_view1" />
+
+    <ImageView
+        android:id="@+id/image_view2"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/polygon_7"
+        app:layout_constraintStart_toStartOf="@+id/welcome_text"
+        app:layout_constraintTop_toBottomOf="@+id/et_email"
+        android:contentDescription="@string/CD_password_image_view2" />
+
+    <ImageView
+        android:id="@+id/image_view3"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/polygon_7"
+        app:layout_constraintStart_toStartOf="@+id/welcome_text"
+        app:layout_constraintTop_toBottomOf="@+id/et_password"
+        android:contentDescription="@string/CD_check_password_image_view3" />
+
+    <ImageView
+        android:id="@+id/image_view4"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/polygon_7"
+        app:layout_constraintStart_toStartOf="@+id/welcome_text"
+        app:layout_constraintTop_toBottomOf="@+id/et_re_password"
+        android:contentDescription="@string/CD_Name_image_view4" />
+
+    <ImageView
+        android:id="@+id/image_view5"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/polygon_7"
+        app:layout_constraintStart_toStartOf="@+id/welcome_text"
+        app:layout_constraintTop_toBottomOf="@+id/et_name"
+        android:contentDescription="@string/CD_Phone_number_image_view5" />
+
+    <ImageView
+        android:id="@+id/image_view6"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/polygon_7"
+        app:layout_constraintStart_toStartOf="@+id/welcome_text"
+        app:layout_constraintTop_toBottomOf="@+id/et_phone_number"
+        android:contentDescription="@string/CD_check_image_view6" />
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:text="@string/welcome"
+        android:textColor="#ffd600"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/email"
+        android:textColor="#000000"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/image_view1"
+        app:layout_constraintTop_toBottomOf="@id/welcome_text" />
+
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/password"
+        android:textColor="@color/colorBlack"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/image_view1"
+        app:layout_constraintTop_toBottomOf="@id/et_email" />
+
+    <TextView
+        android:id="@+id/tv_re_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/check_password"
+        android:textColor="#000000"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/image_view1"
+        app:layout_constraintTop_toBottomOf="@id/et_password" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/name"
+        android:textColor="#000000"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/image_view1"
+        app:layout_constraintTop_toBottomOf="@id/et_re_password" />
+
+    <TextView
+        android:id="@+id/tv_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/phone_number"
+        android:textColor="#000000"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/image_view1"
+        app:layout_constraintTop_toBottomOf="@id/et_name" />
+
+    <TextView
+        android:id="@+id/tv_checkcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/checkcode"
+        android:textColor="#000000"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/image_view1"
+        app:layout_constraintTop_toBottomOf="@id/et_phone_number" />
+</androidx.constraintlayout.widget.ConstraintLayout>
