@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="location_permission_rationale">Location permission is needed to monitor or range beacons.</string>
+    <string name="ok">OK</string>
+
+</resources>
