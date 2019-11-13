@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Club_ProJect(a rich film)</string>
-</resources>
+    <string name="register">회원가입</string>
+    <string name="password">비밀번호</string>
+    <string name="email">이메일</string></resources>
