@@ -4,16 +4,106 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class HeloController {
-
-	@RequestMapping("/{num}")
-	public String index(@PathVariable int num, Model model) {
-		int res = 0;
-		for(int i=1;i<=num;i++) res+=1;
-		model.addAttribute("msg","total: " + res);
-		return "index";
+	@RequestMapping("/")
+	public ModelAndView index(ModelAndView mav) {
+		mav.setViewName("index");
+		return mav;
 	}
+	
+@RequestMapping("/other")
+	public String other() {
+	return "redirect:/";
+}
+@RequestMapping("/home")
+	public String home() {
+	return "forward:/";
+}
+}
+	
+//	@RequestMapping(value = "/", method= RequestMethod.GET)
+//	public ModelAndView index(ModelAndView mav) {
+//		mav.setViewName("index");
+//		mav.addObject("msg","폼을 전송시켜주세요");
+////		mav.addObject("msg","이름 적어 전송");
+//		return mav;
+//	}
+//	@RequestMapping(value = "/", method= RequestMethod.POST)
+//	public ModelAndView send(
+//			@RequestParam(value="check1",required = false) boolean check1,
+//			@RequestParam(value="radio1",required = false) String  radio1,
+//			@RequestParam(value="select1",required = false) String select1,
+//			@RequestParam(value="select2",required = false) String[] select2,
+//			ModelAndView mav) {
+//			
+//		String res = "";
+//		try {
+//			res = "check: " + check1 +
+//				"\n radio: " + radio1 +
+//				"\n select: " + select1 +
+//				"\n select2:";
+//		}catch(NullPointerException e) {}
+//		try {
+//			res += select2[0];
+//			for(int i = 1;i<select2.length;i++)
+//				res += "," + select2[i];
+//		}
+//		catch (NullPointerException e) {
+//			res +="null";
+//		}
+//		mav.addObject("msg", res);
+//		mav.setViewName("index");
+//		return mav;
+//	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+//	public ModelAndView send(@RequestParam("text1")String str, ModelAndView mav) {
+//		mav.addObject("msg","안녕하세요!"+str+"님!");
+//		mav.addObject("value", str);
+//		mav.setViewName("index");
+//		return mav;
+//	}
+
+	
+	
+	
+//	@RequestMapping("/{num}")
+//	public ModelAndView index(@PathVariable int num, ModelAndView mav) {
+//		int res = 0;
+//		for(int i=1;i<=num;i++) 
+//			res += i;
+//		mav.addObject("msg","total:" +res);
+//		mav.setViewName("index");
+//		return mav;
+//	}
+
+//	@RequestMapping("/{num}")
+//	public String index(@PathVariable int num, Model model) {
+//		int res = 0;
+//		for(int i=1;i<=num;i++) 
+//			res += i;
+//		model.addAttribute("msg","total: " + res);
+//		return "index";
+//	}
 	
 // @RequestMapping("/")
 // public String index(Model model) {
@@ -21,7 +111,7 @@ public class HeloController {
 // return "index";
 // }
 
-}
+
 
 //import org.springframework.web.bind.annotation.RequestMapping;
 ////import 안되면 Sprng web 추가 (프로젝트 생성할떄)
