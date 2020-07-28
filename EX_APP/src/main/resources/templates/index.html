@@ -6,6 +6,12 @@
 </head>
 <body>
 	<h1>hello page</h1>
+	<p th:text="'from parameter... id='  ${param.id[0] + ',name='+param.name[0]}"></p>
+	<!--  
+	<p th:text="${new java.util.Date().toString()}"></p>
+	<p th:text="${#dates.format(new java.util.Date(),'dd/MMM/yyyy HH:mm')}"> </p>
+	<p th:text="${#numbers.formatInteger(1234,7)}"></p>
+	<p th:text="${#strings.toUpperCase('werlcome to spring')}"></p> -->
 </body>
 <!--
 	<body>
@@ -30,7 +36,7 @@
 			<select id = "select1" name ="select1" size = "4">
 				<option value = "Android">Mac</option>
 				<option value = "Android">Linux</option>
-				<option value = "Android">Windows</option>
+				<optionx` value = "Android">Windows</option>
 				
 			</select>			
 			<select id = "select2" name ="select2" size = "4" multiple = "multiple">
