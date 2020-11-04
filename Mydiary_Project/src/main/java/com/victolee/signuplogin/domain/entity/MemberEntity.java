@@ -15,10 +15,10 @@ import javax.validation.constraints.Pattern;
 @Table(name = "member")
 public class MemberEntity {
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-//    @NotBlank
+    //    @NotBlank
     @Column(length = 20, nullable = false)
     private String email;
 
@@ -28,7 +28,7 @@ public class MemberEntity {
     @Column(length = 100, nullable = false)
     private String password;
 
-    @Builder
+    @Bui    lder
 
     public MemberEntity(Long id, String email, String password) {
         this.id = id;

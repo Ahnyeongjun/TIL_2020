@@ -18,10 +18,11 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 public class MemberServiceIntegrationTest {
     @Autowired
     MemberRepository memberRepository; /// = new MemoryMemberRepository();
-    @Autowired MemberService memberService;// = new MemberService();
+    @Autowired
+    MemberService memberService;// = new MemberService();
 
-        @Test
-    void 회원가입(){
+    @Test
+    void 회원가입() {
         Member member = new Member();
         member.setName("hello");
 
@@ -30,16 +31,17 @@ public class MemberServiceIntegrationTest {
         Member findMember = memberService.findOne(saveId).get();
         Assertions.assertThat(member.getName()).isEqualTo(findMember.getName());
 
-    }   
+    }
+
     @Test
-    public void 중복_예외(){
+    public void 중복_예외() {
         Member member1 = new Member();
         member1.setName("hello");
         Member member2 = new Member();
         member2.setName("hello");
 
         memberService.join(member1);
-        IllegalStateException e = assertThrows(IllegalStateException.class,() ->memberService.join(member2));
+        IllegalStateException e = assertThrows(IllegalStateException.class, () -> memberService.join(member2));
         Assertions.assertThat(e.getMessage()).isEqualTo("이미 존재하는 회원");
 //        try{
 //            memberService.join(member2);

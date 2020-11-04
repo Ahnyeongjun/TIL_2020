@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1ca5a24c-7abb-446a-a45e-984041d5e873" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/EX_APP/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EX_APP/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EX_APP/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EX_APP/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EX_APP/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EX_APP/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EX_APP/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EX_APP/src/main/java/com/example/demo/ExApp2Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EX_APP/src/main/java/com/example/demo/HeloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EX_APP/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EX_APP/src/main/resources/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EX_APP/src/test/java/com/example/demo/ExApp2ApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mydiary_Project/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/Mydiary_Project/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mydiary_Project/src/main/java/com/victolee/signuplogin/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mydiary_Project/src/main/java/com/victolee/signuplogin/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mydiary_Project/src/main/java/com/victolee/signuplogin/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mydiary_Project/src/main/java/com/victolee/signuplogin/controller/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mydiary_Project/src/main/java/com/victolee/signuplogin/domain/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mydiary_Project/src/main/java/com/victolee/signuplogin/domain/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mydiary_Project/src/main/java/com/victolee/signuplogin/domain/entity/MemberEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mydiary_Project/src/main/java/com/victolee/signuplogin/domain/entity/MemberEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mydiary_Project/src/main/java/com/victolee/signuplogin/dto/MemberDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mydiary_Project/src/main/java/com/victolee/signuplogin/dto/MemberDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mydiary_Project/src/main/java/com/victolee/signuplogin/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mydiary_Project/src/main/java/com/victolee/signuplogin/service/MemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mydiary_Project/src/main/resources/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/Mydiary_Project/src/main/resources/templates/admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mydiary_Project/src/main/resources/templates/denied.html" beforeDir="false" afterPath="$PROJECT_DIR$/Mydiary_Project/src/main/resources/templates/denied.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mydiary_Project/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Mydiary_Project/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mydiary_Project/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Mydiary_Project/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mydiary_Project/src/main/resources/templates/loginSuccess.html" beforeDir="false" afterPath="$PROJECT_DIR$/Mydiary_Project/src/main/resources/templates/loginSuccess.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mydiary_Project/src/main/resources/templates/logout.html" beforeDir="false" afterPath="$PROJECT_DIR$/Mydiary_Project/src/main/resources/templates/logout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mydiary_Project/src/main/resources/templates/myinfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/Mydiary_Project/src/main/resources/templates/myinfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mydiary_Project/src/main/resources/templates/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/Mydiary_Project/src/main/resources/templates/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello_spring/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/hello_spring/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello_spring/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/hello_spring/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello_spring/src/main/java/hello/hello_spring/HelloSpringApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/hello_spring/src/main/java/hello/hello_spring/HelloSpringApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello_spring/src/main/java/hello/hello_spring/controler/HomeControler.java" beforeDir="false" afterPath="$PROJECT_DIR$/hello_spring/src/main/java/hello/hello_spring/controler/HomeControler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello_spring/src/main/java/hello/hello_spring/controler/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hello_spring/src/main/java/hello/hello_spring/controler/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello_spring/src/main/java/hello/hello_spring/controler/helloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hello_spring/src/main/java/hello/hello_spring/controler/helloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello_spring/src/main/java/hello/hello_spring/domain/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/hello_spring/src/main/java/hello/hello_spring/domain/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello_spring/src/main/java/hello/hello_spring/repository/JdbcMemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/hello_spring/src/main/java/hello/hello_spring/repository/JdbcMemberRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello_spring/src/main/java/hello/hello_spring/repository/JdbcTemplateRepostory.java" beforeDir="false" afterPath="$PROJECT_DIR$/hello_spring/src/main/java/hello/hello_spring/repository/JdbcTemplateRepostory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello_spring/src/main/java/hello/hello_spring/repository/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/hello_spring/src/main/java/hello/hello_spring/repository/MemberRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello_spring/src/main/java/hello/hello_spring/repository/MemoryMemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/hello_spring/src/main/java/hello/hello_spring/repository/MemoryMemberRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello_spring/src/main/java/hello/hello_spring/repository/jpaMemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/hello_spring/src/main/java/hello/hello_spring/repository/jpaMemberRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello_spring/src/main/java/hello/hello_spring/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hello_spring/src/main/java/hello/hello_spring/service/MemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello_spring/src/main/java/hello/hello_spring/service/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/hello_spring/src/main/java/hello/hello_spring/service/SpringConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello_spring/src/main/resources/templates/hello-template.html" beforeDir="false" afterPath="$PROJECT_DIR$/hello_spring/src/main/resources/templates/hello-template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello_spring/src/main/resources/templates/members/memberList.html" beforeDir="false" afterPath="$PROJECT_DIR$/hello_spring/src/main/resources/templates/members/memberList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello_spring/src/test/java/hello/hello_spring/HelloSpringApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/hello_spring/src/test/java/hello/hello_spring/HelloSpringApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello_spring/src/test/java/hello/hello_spring/repository/MemberRepostory.java" beforeDir="false" afterPath="$PROJECT_DIR$/hello_spring/src/test/java/hello/hello_spring/repository/MemberRepostory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello_spring/src/test/java/hello/hello_spring/service/MemberServiceIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/hello_spring/src/test/java/hello/hello_spring/service/MemberServiceIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello_spring/src/test/java/hello/hello_spring/service/MemberServieTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/hello_spring/src/test/java/hello/hello_spring/service/MemberServieTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-webserivce/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/spring-webserivce/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/스프링부트 프로그래밍 입문 3장/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/스프링부트 프로그래밍 입문 3장/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/스프링부트 프로그래밍 입문 3장/WebContent/WEB-INF/lib/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/스프링부트 프로그래밍 입문 3장/WebContent/WEB-INF/lib/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/스프링부트 프로그래밍 입문 3장/java/com/example/demo/ExApp2Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/스프링부트 프로그래밍 입문 3장/java/com/example/demo/ExApp2Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/스프링부트 프로그래밍 입문 3장/java/com/example/demo/HeloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/스프링부트 프로그래밍 입문 3장/java/com/example/demo/HeloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/스프링부트 프로그래밍 입문 3장/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/스프링부트 프로그래밍 입문 3장/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/스프링부트 프로그래밍 입문 3장/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/스프링부트 프로그래밍 입문 3장/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/스프링부트 프로그래밍 입문 3장/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/스프링부트 프로그래밍 입문 3장/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/스프링부트 프로그래밍 입문 3장/src/main/java/com/example/demo/ExApp2Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/스프링부트 프로그래밍 입문 3장/src/main/java/com/example/demo/ExApp2Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/스프링부트 프로그래밍 입문 3장/src/main/java/com/example/demo/HeloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/스프링부트 프로그래밍 입문 3장/src/main/java/com/example/demo/HeloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/스프링부트 프로그래밍 입문 3장/src/test/java/com/example/demo/ExApp2ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/스프링부트 프로그래밍 입문 3장/src/test/java/com/example/demo/ExApp2ApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1hE9Y0w794bUyB4OJyW2G8DboAl" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager" selected="Spring Boot.ExApp2Application">
+    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExApp2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="EX_APP-2" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.ExApp2Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1ca5a24c-7abb-446a-a45e-984041d5e873" name="Default Changelist" comment="" />
+      <created>1599565433979</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599565433979</updated>
+      <workItem from="1599565441617" duration="813000" />
+      <workItem from="1599567257389" duration="94000" />
+      <workItem from="1599567373074" duration="101000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1599567073150">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1599567073150" />
+    <state x="0" y="146" key="new project wizard" timestamp="1599567472882">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="0" y="146" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1599567472882" />
+  </component>
+</project>

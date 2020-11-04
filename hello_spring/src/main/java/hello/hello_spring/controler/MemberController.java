@@ -13,17 +13,19 @@ import java.util.List;
 @Controller
 public class MemberController {
     private final MemberService memberService;// = new MemberService();
+
     @Autowired
     public MemberController(MemberService memberService) {
         this.memberService = memberService;
     }
 
     @GetMapping("/members/new")
-    public String createForm(){
+    public String createForm() {
         return "Members/CreateMemberForm";
     }
+
     @PostMapping("/members/new")
-    public String create(MemberForm form){
+    public String create(MemberForm form) {
         Member member = new Member();
         member.setName(form.getName());
 
@@ -31,12 +33,13 @@ public class MemberController {
 
         memberService.join(member);
 
-        return"redirect:/";
+        return "redirect:/";
     }
+
     @GetMapping("/members")
-    public String list(Model model){
+    public String list(Model model) {
         List<Member> members = memberService.findMembers();
-        model.addAttribute("members",members);
+        model.addAttribute("members", members);
         return "members/memberList";
     }
 }

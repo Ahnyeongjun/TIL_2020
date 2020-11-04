@@ -17,16 +17,18 @@ public class MemberServieTest {
     MemberService memberService;// = new MemberService();
 
     @BeforeEach
-    public void boforeEach(){
+    public void boforeEach() {
         memberRepository = new MemoryMemberRepository();
         memberService = new MemberService(memberRepository);
     }
+
     @AfterEach
-    public void afterEach(){
+    public void afterEach() {
         memberRepository.clearStore();
     }
+
     @Test
-    void 회원가입(){
+    void 회원가입() {
         Member member = new Member();
         member.setName("hello");
 
@@ -36,16 +38,17 @@ public class MemberServieTest {
         Assertions.assertThat(member.getName()).isEqualTo(findMember.getName());
 
     }
+
     @Test
-    public void 중복_예외(){
+    public void 중복_예외() {
         Member member1 = new Member();
         member1.setName("hello");
         Member member2 = new Member();
         member2.setName("hello");
 
         memberService.join(member1);
-        IllegalStateException e = assertThrows(IllegalStateException.class,() ->memberService.join(member2));
-            Assertions.assertThat(e.getMessage()).isEqualTo("이미 존재하는 회원");
+        IllegalStateException e = assertThrows(IllegalStateException.class, () -> memberService.join(member2));
+        Assertions.assertThat(e.getMessage()).isEqualTo("이미 존재하는 회원");
 //        try{
 //            memberService.join(member2);
 //            fail();

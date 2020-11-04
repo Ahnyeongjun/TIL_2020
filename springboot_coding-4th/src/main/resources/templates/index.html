@@ -1,0 +1,100 @@
+<!--&lt;!&ndash;&lt;!&ndash;<!DOCTYPE HTML>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;<html xmlns:th="http://www.thymeleaf.org">&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;<head>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;    <title>top page</title>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;    <meta http-equiv="Content-Type"&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;          content="text/html; charset=UTF-8" />&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;    <style>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;        h1 { font-size:18pt; font-weight:bold; color:gray; }&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;        body { font-size:13pt; color:gray; margin:5px 25px; }&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;    </style>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;</head>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;<body>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;<body>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;<h1>Hello page</h1>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;&lt;!&ndash;기본&ndash;&gt;&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;<p th:text="${new java.util.Date().toString()}"></p>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;&lt;!&ndash;유틸리티 객체&ndash;&gt;&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;&lt;!&ndash;날짜 형식, 정수형식,텍스트형식&ndash;&gt;&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;<p th:text="${#dates.format(new java.util.Date(),'dd/MMM/yyyy HH:mm')}"></p>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;<p th:text="${#numbers.formatInteger(1234,7)}"></p>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;<p th:text="${#strings.toUpperCase('Welcome to Spring.')}"></p>&ndash;&gt;&ndash;&gt;-->
+
+<!--&lt;!&ndash;&lt;!&ndash;&lt;!&ndash;쿼리 스트링 &ndash;&gt;&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;&lt;!&ndash;<p th:text="'from parameter... id=' + ${param.id[0] + ',name=' + param.name[0]}"></p>&ndash;&gt;&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;&lt;!&ndash; #{값 지정} 추출할 값을 지정한다. 이것은 프로젝트에 미리 준비해둔 프로퍼티 파일에서 값을 가져와서 표시하는 것이다. 자바에선 프로퍼티 파일에 미리 텍스트를 저장해두고 필요에 따라 꺼내서사용하는 경우가있다.&ndash;&gt;&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;&lt;!&ndash;@{값 지정} 주소가 변할 떄 사용하면 유용함.&ndash;&gt;&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;&lt;!&ndash;타임리프의 기본은 &ndash;&gt;&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;</body>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;</body>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;</html>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;<!DOCTYPE HTML>&ndash;&gt;-->
+<!--&lt;!&ndash;<html xmlns:th="http://www.thymeleaf.org">&ndash;&gt;-->
+<!--&lt;!&ndash;<head>&ndash;&gt;-->
+<!--&lt;!&ndash;    <title>top page</title>&ndash;&gt;-->
+<!--&lt;!&ndash;    <meta http-equiv="Content-Type"&ndash;&gt;-->
+<!--&lt;!&ndash;          content="text/html; charset=UTF-8" />&ndash;&gt;-->
+<!--&lt;!&ndash;    <style>&ndash;&gt;-->
+<!--&lt;!&ndash;        h1 { font-size:18pt; font-weight:bold; color:gray; }&ndash;&gt;-->
+<!--&lt;!&ndash;        body { font-size:13pt; color:gray; margin:5px 25px; }&ndash;&gt;-->
+<!--&lt;!&ndash;        tr { margin:5px; }&ndash;&gt;-->
+<!--&lt;!&ndash;        th { padding:5px; color:white; background:darkgray; }&ndash;&gt;-->
+<!--&lt;!&ndash;        td { padding:5px; color:black; background:#e0e0ff; }&ndash;&gt;-->
+<!--&lt;!&ndash;    </style>&ndash;&gt;-->
+<!--&lt;!&ndash;</head>&ndash;&gt;-->
+<!--&lt;!&ndash;<body>&ndash;&gt;-->
+<!--&lt;!&ndash;<h1 th:text="#{content.title}">Helo page</h1>&ndash;&gt;-->
+<!--&lt;!&ndash;<p th:text="${msg}">message.</p>&ndash;&gt;-->
+<!--&lt;!&ndash;<table th:object="${object}">&ndash;&gt;-->
+<!--&lt;!&ndash;    <tr><th>ID</th><td th:text="*{id}"></td></tr>&ndash;&gt;-->
+<!--&lt;!&ndash;    <tr><th>NAME</th><td th:text="*{name}"></td></tr>&ndash;&gt;-->
+<!--&lt;!&ndash;    <tr><th>MAIL</th><td th:text="*{value}"></td></tr>&ndash;&gt;-->
+<!--&lt;!&ndash;</table>&ndash;&gt;-->
+<!--&lt;!&ndash;</body>&ndash;&gt;-->
+<!--&lt;!&ndash;</html>&ndash;&gt;-->
+<!--&lt;!&ndash; &ndash;&gt;-->
+<!--<!DOCTYPE HTML>-->
+<!--<html xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <title>top page</title>-->
+<!--    <meta http-equiv="Content-Type"-->
+<!--          content="text/html; charset=UTF-8" />-->
+<!--    <style>-->
+<!--        h1 { font-size:18pt; font-weight:bold; color:gray; }-->
+<!--        body { font-size:13pt; color:gray; margin:5px 25px; }-->
+<!--    </style>-->
+<!--    <script th:inline="javascript">-->
+<!--        function action(){-->
+<!--            var val = document.getElementById("text1").value;-->
+<!--            var res = parseInt(val * ((100 + /*[[${tax}]]*/) / 100));-->
+<!--            document.getElementById("msg").innerHTML =-->
+<!--                "include tax: " + res;-->
+<!--        }-->
+<!--    </script>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1 th:text="#{content.title}">Helo page</h1>-->
+<!--<p id="msg"></p>-->
+<!--<input type="text" id="text1" />-->
+<!--<button onclick="action()">click</button>-->
+<!--</body>-->
+<!--</html>-->
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>top page</title>
+    <meta http-equiv="Content-Type"
+          content="text/html; charset=UTF-8" />
+    <style>
+        h1 { font-size:18pt; font-weight:bold; color:gray; }
+        body { font-size:13pt; color:gray; margin:5px 25px; }
+    </style>
+    <style th:include="part :: frag_style"></style>
+</head>
+<body>
+<h1 th:text="#{content.title}">Helo page</h1>
+<div th:include="part :: frag_body">
+    <p>this is orginal content.</p>
+</div>
+</body>
+</html>

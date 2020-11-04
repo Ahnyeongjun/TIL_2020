@@ -4,17 +4,18 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+
 @Controller
 public class HeloController {
 
-	@RequestMapping("/{num}")
-	public String index(@PathVariable int num, Model model) {
-		int res = 0;
-		for(int i=1;i<=num;i++) res+=1;
-		model.addAttribute("msg","total: " + res);
-		return "index";
-	}
-	
+    @RequestMapping("/{num}")
+    public String index(@PathVariable int num, Model model) {
+        int res = 0;
+        for (int i = 1; i <= num; i++) res += 1;
+        model.addAttribute("msg", "total: " + res);
+        return "index";
+    }
+
 // @RequestMapping("/")
 // public String index(Model model) {
 // model.addAttribute("msg", "<h1>END</h1><br /><h2>END</h2>");

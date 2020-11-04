@@ -14,7 +14,8 @@ import java.util.Optional;
 @Transactional
 public class MemberService {
 
-    private final MemberRepository memberRepository ;//= new MemoryMemberRepository();
+    private final MemberRepository memberRepository;//= new MemoryMemberRepository();
+
     //회원가입
     //            Assertions.assertThat(e.getMessage()).isEqualTo("이미 존재하는 회원");
     //@Autowired
@@ -26,23 +27,23 @@ public class MemberService {
         validateDuplicateMember(member);
 
         memberRepository.save(member);
-       return member.getId();
+        return member.getId();
     }
 
     private void validateDuplicateMember(Member member) {
         memberRepository.findByName(member.getName())
-               .ifPresent(m->{
+                .ifPresent(m -> {
                     throw new IllegalStateException("이미 존재하는 회원");
-               });
+                });
     }
 
-    public List<Member> findMembers(){
+    public List<Member> findMembers() {
         return memberRepository.findAll();
     }
-    public Optional<Member> findOne(Long memberId){
+
+    public Optional<Member> findOne(Long memberId) {
         return memberRepository.findById(memberId);
     }
-
 
 
 }

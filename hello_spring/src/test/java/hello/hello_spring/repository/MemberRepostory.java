@@ -12,10 +12,12 @@ import static org.assertj.core.api.Assertions.*;
 public class MemberRepostory {
 
     MemoryMemberRepository repository = new MemoryMemberRepository();
+
     @AfterEach
-    public void afterEach(){
+    public void afterEach() {
         repository.clearStore();
     }
+
     @Test
     public void save() {
         Member member = new Member();
@@ -30,34 +32,35 @@ public class MemberRepostory {
         //다르면 오류남
         //
     }
+
     @Test
-    public void findByName(){
-            Member member1 = new Member();
-            member1.setName("Spring1");
-            repository.save(member1);
+    public void findByName() {
+        Member member1 = new Member();
+        member1.setName("Spring1");
+        repository.save(member1);
 
-            Member member2 = new Member();
-            member2.setName("Spring2");
-            repository.save(member2);
+        Member member2 = new Member();
+        member2.setName("Spring2");
+        repository.save(member2);
 
-            Member result = repository.findByName("Spring1").get();
+        Member result = repository.findByName("Spring1").get();
 
-            assertThat(result).isEqualTo(member1);
-        }
+        assertThat(result).isEqualTo(member1);
+    }
 
-        @Test
-    public void findAll(){
-            Member member1 = new Member();
-            member1.setName("Spring1");
-            repository.save(member1);
+    @Test
+    public void findAll() {
+        Member member1 = new Member();
+        member1.setName("Spring1");
+        repository.save(member1);
 
-            Member member2 = new Member();
-            member2.setName("Spring2");
-            repository.save(member2);
+        Member member2 = new Member();
+        member2.setName("Spring2");
+        repository.save(member2);
 
-            List<Member> result = repository.findAll();
+        List<Member> result = repository.findAll();
 
-            assertThat(result.size()).isEqualTo(2);
+        assertThat(result.size()).isEqualTo(2);
     }
 
 

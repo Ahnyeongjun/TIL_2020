@@ -34,7 +34,6 @@ public class MemberService implements UserDetailsService {
     }
 
 
-
     @Override
     public UserDetails loadUserByUsername(String userEmail) throws UsernameNotFoundException {
         Optional<MemberEntity> userEntityWrapper = memberRepository.findByEmail(userEmail);
@@ -55,7 +54,7 @@ public class MemberService implements UserDetailsService {
     public Map<String, String> validateHandling(Errors errors) {
         Map<String, String> validatorResult = new HashMap<>();
 
-        for (FieldError error :errors.getFieldErrors()) {
+        for (FieldError error : errors.getFieldErrors()) {
             String validKeyName = String.format("valid_%s", error.getField());
             validatorResult.put(validKeyName, error.getDefaultMessage());
 
