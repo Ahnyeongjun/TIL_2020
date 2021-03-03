@@ -1,0 +1,5 @@
+include ':app'
+<<<<<<< HEAD
+rootProject.name='Club_ProJect(a rich film)'
+=======
+>>>>>>> ab/master
